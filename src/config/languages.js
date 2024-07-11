@@ -1,14 +1,14 @@
 const languages = [
   {
-    code: 'en',
-    name: 'English',
-    country_code: 'gb'
+    code: "en",
+    name: "English",
+    country_code: "gb",
   },
   {
-    code: 'es',
-    name: 'Español',
-    country_code: 'es'
-  }
+    code: "vi",
+    name: "Vietnamese",
+    country_code: "vn",
+  },
 ];
 
 export default languages;

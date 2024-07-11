@@ -1,69 +1,53 @@
-import {
-  Box,
-  Container,
-  Stack,
-  Text,
-  Image,
-} from '@chakra-ui/react';
-import cookies from 'js-cookie';
-import { useEffect } from 'react';
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
-import { useTranslation } from 'react-i18next';
-import { changeLanguage } from 'i18next';
+import { Box, Container, Stack, Text, Image } from "@chakra-ui/react";
+import cookies from "js-cookie";
+import { useEffect } from "react";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
+import { changeLanguage } from "i18next";
 
-import './Footer.css';
-import languages from 'config/languages';
+import "./Footer.css";
+import languages from "config/languages";
+import footerIcon from "../../assets/media/space-fighter-96.png";
 
-function Footer({ 
-  sections = [], 
-  state = null, 
-  fullpageApi, 
-  activeSection = '' 
+function Footer({
+  sections = [],
+  state = null,
+  fullpageApi,
+  activeSection = "",
 }) {
   const { t } = useTranslation();
 
-  const currentLanguageCode = cookies.get('i18next') || 'es';
-  const currentLanguage = languages.find(l => l.code === currentLanguageCode);
+  const currentLanguageCode = cookies.get("i18next") || "es";
+  const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
 
-  useEffect(() => { }, [currentLanguage])
+  useEffect(() => {}, [currentLanguage]);
 
   return (
-    <Box
-      bg={'#212529'}
-      color={'white'}>
+    <Box bg={"#212529"} color={"white"}>
       <Container
         as={Stack}
-        maxW={'6xl'}
+        maxW={"6xl"}
         py={4}
         spacing={4}
-        justify={'center'}
-        align={'center'}
+        justify={"center"}
+        align={"center"}
       >
-        <Stack 
-          direction={'row'} 
-          verticalAlign="center" 
+        <Stack
+          direction={"row"}
+          verticalAlign="center"
           onClick={() => fullpageApi.moveTo(1)}
           cursor="pointer"
         >
-          <Image 
-            src="https://www.gravatar.com/avatar/9fe92a893b3879a72ea0c451d504a3fb?s=30"
+          <Image
+            src={footerIcon}
             className="logo d-inline-block align-top"
-            alt="csanchezarisa logo"
+            alt="hung nguyen logo"
           />
-          <Text
-            as="strong"
-            className="logo"
-            verticalAlign="center"
-          >
-            CSANCHEZARISA
+          <Text as="strong" className="logo" verticalAlign="center">
+            Hung Nguyen
           </Text>
         </Stack>
-        <Navbar 
-          collapseOnSelect 
-          bg="dark" 
-          variant="dark" 
-          id="footer-menu"
-        >
+        <Navbar collapseOnSelect bg="dark" variant="dark" id="footer-menu">
           <Container>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 
@@ -72,10 +56,10 @@ function Footer({
               <Nav className="me-auto" id="main-menu">
                 {sections.map(({ id, name }, index) => {
                   return (
-                    <Nav.Link 
-                      onClick={() => fullpageApi.moveTo(index + 2)} 
+                    <Nav.Link
+                      onClick={() => fullpageApi.moveTo(index + 2)}
                       key={id}
-                      className={activeSection === id ? 'active' : ''}
+                      className={activeSection === id ? "active" : ""}
                     >
                       {name}
                     </Nav.Link>
@@ -86,14 +70,14 @@ function Footer({
               {/* CHANGE LANG */}
               <Nav>
                 <NavDropdown
-                  title={t('language')}
+                  title={t("language")}
                   id="collasible-nav-dropdown"
                   align="end"
                   drop="up"
                   menuVariant="dark"
                 >
-                  <NavDropdown.Header>{t('language')}</NavDropdown.Header>
-                  
+                  <NavDropdown.Header>{t("language")}</NavDropdown.Header>
+
                   {languages.map(({ code, name, country_code }) => (
                     <NavDropdown.Item
                       key={code}
@@ -102,9 +86,10 @@ function Footer({
                     >
                       <span
                         className={`flag-icon flag-icon-${country_code} mx-2`}
-                        style={{ opacity: code === currentLanguageCode ? 0.5 : 1 }}
-                      >
-                      </span>
+                        style={{
+                          opacity: code === currentLanguageCode ? 0.5 : 1,
+                        }}
+                      ></span>
                       {name}
                     </NavDropdown.Item>
                   ))}
@@ -115,21 +100,17 @@ function Footer({
         </Navbar>
       </Container>
 
-      <Box
-        borderTopWidth={1}
-        borderStyle={'solid'}
-        borderColor={'gray.200'}>
+      <Box borderTopWidth={1} borderStyle={"solid"} borderColor={"gray.200"}>
         <Container
           as={Stack}
-          maxW={'7xl'}
+          maxW={"7xl"}
           py={4}
-          direction={{ base: 'column', md: 'row' }}
+          direction={{ base: "column", md: "row" }}
           spacing={4}
-          justify={{ base: 'left', md: 'space-between' }}
-          align={{ base: 'left', md: 'left' }}>
-          <Text>
-            Cristóbal Sánchez Arisa
-          </Text>
+          justify={{ base: "left", md: "space-between" }}
+          align={{ base: "left", md: "left" }}
+        >
+          <Text>Hung Nguyen</Text>
         </Container>
       </Box>
     </Box>
