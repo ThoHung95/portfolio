@@ -2,11 +2,10 @@
 
 <img height="128" alt="Csanchezarisa + React" src="Csanchezarisa+React.png">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
-It's made with React, using very cool and fancy libraries such as [fullpage.js](https://alvarotrigo.com/fullPage/), [Chakra UI](https://chakra-ui.com/), [React-Bootstrap](https://react-bootstrap.github.io/) and [EmailJS](https://www.emailjs.com/). 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+It's made with React, using very cool and fancy libraries such as [fullpage.js](https://alvarotrigo.com/fullPage/), [Chakra UI](https://chakra-ui.com/), [React-Bootstrap](https://react-bootstrap.github.io/) and [EmailJS](https://www.emailjs.com/).
 
 You can check all other dependencies by going to [package.json](package.json) file.
-
 
 ## 1. How to use this project
 
@@ -17,13 +16,13 @@ First of all, you'll need to duplicate the [licenses.js.example](src/config/lice
 This project uses `fullpage.js` library to visually set up the user interface and `EmailJS` to send emails easily and correctly. So if you want to reuse this project and build a production React app, **you'll need the licenses for both libraries** first. But it is **not necessary for testing and development purposes**.
 
 You can get the fullpage.js license and create a free user in EmailJS services by following this links:
+
 - **fullpage.js:** https://alvarotrigo.com/fullPage/pricing/
 - **EmailJS:** https://www.emailjs.com/
 
 ### 1.2. Execute `npm install`
 
 Secondly, execute `npm install`, so npm will install all the dependencies needed to run and build this React App.
-
 
 ## 2. Available Scripts
 
@@ -66,7 +65,6 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 Using [gh-pages](https://github.com/tschaub/gh-pages) package, the React App is built and deployed to your repository, in a new `gh-pages` branch, so you can serve it by using [GitHub Pages](https://pages.github.com/).
 
-
 ## 3. Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
@@ -96,3 +94,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### 3.6. `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# portfolio
