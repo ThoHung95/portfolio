@@ -60,7 +60,7 @@
   "devDependencies": {
     "gh-pages": "^4.0.0"
   },
-  "description": "<img height=\"128\" alt=\"Csanchezarisa + React\" src=\"Csanchezarisa+React.png\">",
+  "description": "",
   "main": "index.js",
   "author": "",
   "license": "ISC"
