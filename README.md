@@ -1,7 +1,5 @@
 # Personal portfolio web app
 
-<img height="128" alt="Csanchezarisa + React" src="Csanchezarisa+React.png">
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 It's made with React, using very cool and fancy libraries such as [fullpage.js](https://alvarotrigo.com/fullPage/), [Chakra UI](https://chakra-ui.com/), [React-Bootstrap](https://react-bootstrap.github.io/) and [EmailJS](https://www.emailjs.com/).
 
