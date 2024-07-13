@@ -2,7 +2,7 @@
   "name": "hung_nguyen_portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://thohung95.github.io/portfolio/",
+  "homepage": "https://thohung95.github.io",
   "dependencies": {
     "@chakra-ui/react": "^2.2.6",
     "@emailjs/browser": "^3.6.2",
